@@ -13,22 +13,46 @@ import java.util.List;
  * NOTE: The array provided in the constructor MUST be ordered.
  */
 public class ThreeSumQuadratic implements ThreeSum {
-    /**
-     * Construct a ThreeSumQuadratic on a.
-     * @param a a sorted array.
-     */
-    public ThreeSumQuadratic(int[] a) {
-        this.a = a;
-        length = a.length;
-    }
+	/**
+	 * Construct a ThreeSumQuadratic on a.
+	 * @param a a sorted array.
+	 */
+	public ThreeSumQuadratic(int[] a) {
+		this.a = a;
+		length = a.length;
+	}
 
-    public Triple[] getTriples() {
-        List<Triple> triples = new ArrayList<>();
-        for (int i = 0; i < length; i++) triples.addAll(getTriples(i));
-        Collections.sort(triples);
-        return triples.stream().distinct().toArray(Triple[]::new);
-    }
+	public Triple[] getTriples() {
+		List<Triple> triples = new ArrayList<>();
+		for (int i = 0; i < length; i++) triples.addAll(getTriples(i));
+		Collections.sort(triples);
+		return triples.stream().distinct().toArray(Triple[]::new);
+	}
 
+<<<<<<< HEAD
+	/**
+	 * Get a list of Triples such that the middle index is the given value j.
+	 *
+	 * @param j the index of the middle value.
+	 * @return a Triple such that
+	 */
+	public List<Triple> getTriples(int j) {
+		List<Triple> triples = new ArrayList<>();
+		// TO BE IMPLEMENTED  : for each candidate, test if a[i] + a[j] + a[k] = 0.
+		for(int i =0;i<j;i++) {
+			for(int k=j+1;k<length;k++) {
+				int sum = a[i]+ a[j]+a[k];
+				if(sum==0) {
+					triples.add(new Triple(a[i],a[j],a[k]));
+				}
+			}
+		}
+		return triples;
+	}
+
+	private final int[] a;
+	private final int length;
+=======
     /**
      * Get a list of Triples such that the middle index is the given value j.
      *
@@ -43,4 +67,5 @@ throw new RuntimeException("implementation missing");
 
     private final int[] a;
     private final int length;
+>>>>>>> upstream/Spring2024
 }
