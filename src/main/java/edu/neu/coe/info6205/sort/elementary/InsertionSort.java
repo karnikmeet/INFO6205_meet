@@ -63,7 +63,6 @@ public class InsertionSort<X extends Comparable<X>> extends SortWithHelper<X> {
     public void sort(X[] xs, int from, int to) {
         final Helper<X> helper = getHelper();
 
-<<<<<<< HEAD
         for (int i = from + 1; i < to; i++) {
             X key = xs[i];
             int j = i - 1;
@@ -77,10 +76,6 @@ public class InsertionSort<X extends Comparable<X>> extends SortWithHelper<X> {
             // Place the key in its correct position
             xs[j + 1] = key;
         }
-=======
-        // TO BE IMPLEMENTED 
-throw new RuntimeException("implementation missing");
->>>>>>> upstream/Spring2024
     }
 
     public static final String DESCRIPTION = "Insertion sort";

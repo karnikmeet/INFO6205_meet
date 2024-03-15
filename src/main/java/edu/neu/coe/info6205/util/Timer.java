@@ -61,7 +61,7 @@ public class Timer {
      */
     public <T, U> double repeat(int n, boolean warmup, Supplier<T> supplier, Function<T, U> function, UnaryOperator<T> preFunction, Consumer<U> postFunction) {
         // TO BE IMPLEMENTED : note that the timer is running when this method is called and should still be running when it returns.
-<<<<<<< HEAD
+
     	// Ensure the timer is running when this method is called
         if (!running) throw new TimerException("Timer should be running when repeat is called.");
 
@@ -116,10 +116,7 @@ public class Timer {
         // Pause the timer and return the mean lap time
         pauseAndLap();
         return meanLapTime();
-=======
-         return 0;
         // END SOLUTION
->>>>>>> upstream/Spring2024
     }
     /**
      * Stop this Timer and return the mean lap time in milliseconds.
@@ -243,13 +240,8 @@ public class Timer {
      * @return the number of ticks for the system clock. Currently defined as nano time.
      */
     private static long getClock() {
-<<<<<<< HEAD
+
         return System.nanoTime();
-=======
-        // TO BE IMPLEMENTED 
-         return 0;
-        // END SOLUTION
->>>>>>> upstream/Spring2024
     }
 
     /**
@@ -260,13 +252,9 @@ public class Timer {
      * @return the corresponding number of milliseconds.
      */
     private static double toMillisecs(long ticks) {
-<<<<<<< HEAD
+
         return ticks/1_000_000.0;
-=======
-        // TO BE IMPLEMENTED 
-         return 0;
         // END SOLUTION
->>>>>>> upstream/Spring2024
     }
 
     final static LazyLogger logger = new LazyLogger(Timer.class);

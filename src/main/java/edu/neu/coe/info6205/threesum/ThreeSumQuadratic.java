@@ -29,7 +29,6 @@ public class ThreeSumQuadratic implements ThreeSum {
 		return triples.stream().distinct().toArray(Triple[]::new);
 	}
 
-<<<<<<< HEAD
 	/**
 	 * Get a list of Triples such that the middle index is the given value j.
 	 *
@@ -52,20 +51,4 @@ public class ThreeSumQuadratic implements ThreeSum {
 
 	private final int[] a;
 	private final int length;
-=======
-    /**
-     * Get a list of Triples such that the middle index is the given value j.
-     *
-     * @param j the index of the middle value.
-     * @return a Triple such that
-     */
-    public List<Triple> getTriples(int j) {
-        List<Triple> triples = new ArrayList<>();
-        // TO BE IMPLEMENTED  : for each candidate, test if a[i] + a[j] + a[k] = 0.
-throw new RuntimeException("implementation missing");
-    }
-
-    private final int[] a;
-    private final int length;
->>>>>>> upstream/Spring2024
 }

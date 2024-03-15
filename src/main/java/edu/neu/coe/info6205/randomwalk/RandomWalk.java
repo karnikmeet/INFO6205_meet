@@ -20,14 +20,8 @@ public class RandomWalk {
      * @param dy the distance he moves in the y direction
      */
     private void move(int dx, int dy) {
-<<<<<<< HEAD
     	x += dx;
     	y += dy;
-=======
-        // TO BE IMPLEMENTED  do move
-         throw new RuntimeException("Not implemented");
-        // END SOLUTION
->>>>>>> upstream/Spring2024
     }
 
     /**
@@ -36,14 +30,9 @@ public class RandomWalk {
      * @param m the number of steps the drunkard takes
      */
     private void randomWalk(int m) {
-<<<<<<< HEAD
         for (int i=0;i<m;i++) {
         	randomMove();
         }
-=======
-        // TO BE IMPLEMENTED 
-throw new RuntimeException("implementation missing");
->>>>>>> upstream/Spring2024
     }
 
     /**
@@ -62,13 +51,8 @@ throw new RuntimeException("implementation missing");
      * @return the (Euclidean) distance from the origin to the current position.
      */
     public double distance() {
-<<<<<<< HEAD
          return Math.sqrt(x*x+y*y);
-=======
         // TO BE IMPLEMENTED 
-         return 0.0;
-        // END SOLUTION
->>>>>>> upstream/Spring2024
     }
 
     /**
